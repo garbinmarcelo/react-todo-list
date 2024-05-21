@@ -1,6 +1,22 @@
-# Getting Started with Create React App
+# Descrição do Projeto Integrador / Todo List Reac
+ToDo List / Lista de tarefas: desenvolver um aplicativo que permita criar, remover e visualizar tarefas em uma lista organizada. Pode incluir recursos como pesquisa, filtro, prioridade, data, etc.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Deverá conter obrigatoriamente: um input para escrever a tarefa com um botão de enviar, a listagem das tarefas que forem sendo criadas e cada tarefa deverá conter um botão estilo input radio ou checked que deve marcar a tarefa como concluída e mudar seu estilo (deixando com cor mais clara e texto tachado) e um botão de lixeira que deverá remover a tarefa da listagem.
+
+* **Módulo VI**: Introdução ao React, SPA (Single Page Applications), Trabalhando com JSX
+* **Módulo VII**: useRef e useReducer, useCallback e useMemo, useLayoutEffect e hooks custom
+
+* **Entregáveis**:
+  * [X] Criar novo repositório no GitHub para o projeto ToDo List em React;
+* **Descrição:**
+  * [ ] Criar um projeto React, que deverá ter uma única página que será de lista de tarefas. Desenvolver a estrutura em HTML e aplicar os estilos com CSS;
+  * [X] Iniciar a parte lógica com JS;
+* **Módulo VIII**: Refs e DOM; Componentes High Order; Portals; Componentes Controlados e Não Controlados.
+* **Entregáveis**:
+  * [ ] Repositório criado no GitHub contendo o projeto ToDo List em React.
+* **Descrição:**
+  * [ ] Finalizar a parte lógica do projeto aplicando todas as funcionalidades.
+
 
 ## Available Scripts
 
