@@ -9,11 +9,11 @@ Deverá conter obrigatoriamente: um input para escrever a tarefa com um botão d
 * **Entregáveis**:
   * [X] Criar novo repositório no GitHub para o projeto ToDo List em React;
 * **Descrição:**
-  * [ ] Criar um projeto React, que deverá ter uma única página que será de lista de tarefas. Desenvolver a estrutura em HTML e aplicar os estilos com CSS;
+  * [X] Criar um projeto React, que deverá ter uma única página que será de lista de tarefas. Desenvolver a estrutura em HTML e aplicar os estilos com CSS;
   * [X] Iniciar a parte lógica com JS;
 * **Módulo VIII**: Refs e DOM; Componentes High Order; Portals; Componentes Controlados e Não Controlados.
 * **Entregáveis**:
-  * [ ] Repositório criado no GitHub contendo o projeto ToDo List em React.
+  * [X] Repositório criado no GitHub contendo o projeto ToDo List em React.
 * **Descrição:**
   * [ ] Finalizar a parte lógica do projeto aplicando todas as funcionalidades.
 
