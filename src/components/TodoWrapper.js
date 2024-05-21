@@ -51,6 +51,7 @@ export const TodoWrapper = () => {
           return todo.id === id ? {
             ...todo,
             task: newTask,
+            completed: todo.completed,
             isEditing: !todo.isEditing,
           } : todo;
         })
@@ -59,8 +60,11 @@ export const TodoWrapper = () => {
 
   return (
       <div className="TodoWrapper">
-        <h1>Lista de Tarefas</h1>
+        <h1 className="text-center mb-4">Lista de Tarefas</h1>
         <TodoForm addTodo={addTodo} />
+        <h2 className="text-secondary">Minhas Tarefas</h2>
+        { todos.length === 0 && <p className="text-center text-secondary">Nenhuma tarefa cadastrada.</p> }
+        <ul className="list-group">
         {todos.map((todo) => (
             todo.isEditing ? (
               <TodoFormEdit key={todo.id} todo={todo} updateTodo={updateTodo} />
@@ -68,6 +72,7 @@ export const TodoWrapper = () => {
               <Todo key={todo.id} todo={todo} toggleComplete={toggleComplete} deleteTodo={deleteTodo} editTodo={editTodo} />
             )
         ))}
+        </ul>
       </div>
   );
 };

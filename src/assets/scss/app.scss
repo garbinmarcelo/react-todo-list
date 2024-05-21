@@ -1,0 +1,26 @@
+body{
+  background: rgb(0,112,148);
+  background: linear-gradient(0deg, rgba(0,112,148,1) 0%, rgba(0,255,158,1) 100%);
+}
+
+input[type="checkbox"]{
+  &.check-success{
+    background-color: var(--bs-success);
+  }
+}
+
+.TodoWrapper{
+  h1{
+    font-size: 2rem;
+  }
+
+  h2{
+    font-size: 1rem;
+  }
+
+  .list-group{
+    .list-group-item{
+      cursor: pointer;
+    }
+  }
+}

@@ -10,7 +10,7 @@ export const TodoForm = ({addTodo}) => {
   };
 
   return (
-      <form className="TodoForm" onSubmit={handleSubmit}>
+      <form className="TodoForm mb-5" onSubmit={handleSubmit}>
         <div className="input-group">
           <input
               type="text"
