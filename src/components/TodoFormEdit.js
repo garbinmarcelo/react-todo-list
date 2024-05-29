@@ -1,28 +1,37 @@
 import React, { useState } from 'react';
+import { ErrorMessage, Field, Form, Formik } from 'formik';
+import { TodoFormSchema } from '../validation/Todo';
 
 export const TodoFormEdit = ({updateTodo, todo}) => {
-  const [newTask, setTodo] = useState(todo.task);
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    updateTodo(todo.id, newTask);
-    setTodo('');
+  const handleSubmit = (values, { setSubmitting, resetForm }) => {
+    updateTodo(todo.id, values.todo);
+    setSubmitting(false);
+    resetForm();
   };
 
   return (
-      <form className="TodoForm" onSubmit={handleSubmit}>
-        <div className="input-group">
-          <input
-              type="text"
-              className="form-control"
-              placeholder="O que temos para hoje?"
-              value={newTask}
-              onChange={(e) => setTodo(e.target.value)}
-          />
-          <button className="btn btn-outline-success" type="submit">
-            Atualizar
-          </button>
-        </div>
-      </form>
+      <Formik
+          initialValues={{ todo: todo.task }}
+          onSubmit={handleSubmit}
+          validationSchema={TodoFormSchema}
+      >
+        {({ errors, touched }) => (
+            <Form className="TodoForm mb-5">
+              <div className="input-group">
+                <Field
+                    type="text"
+                    name="todo"
+                    className={`form-control ${errors.todo && touched.todo ? 'is-invalid' : ''}`}
+                    placeholder="O que temos para hoje?"
+                />
+                <button className="btn btn-outline-success" type="submit">
+                  Atualizar
+                </button>
+              </div>
+              <ErrorMessage name="todo" component="small" className="text-danger" />
+            </Form>
+        )}
+      </Formik>
   );
 };
