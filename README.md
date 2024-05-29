@@ -15,7 +15,7 @@ Deverá conter obrigatoriamente: um input para escrever a tarefa com um botão d
 * **Entregáveis**:
   * [X] Repositório criado no GitHub contendo o projeto ToDo List em React.
 * **Descrição:**
-  * [ ] Finalizar a parte lógica do projeto aplicando todas as funcionalidades.
+  * [X] Finalizar a parte lógica do projeto aplicando todas as funcionalidades.
 
 
 ## Available Scripts
